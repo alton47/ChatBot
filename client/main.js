@@ -87,7 +87,7 @@ const handleSubmit = async (e) => {
   loader(messageDiv);
 
   //OPenAI Bot response
-  const response = await fetch("http://localhost:3000/", {
+  const response = await fetch("https://chatbot-z4xu.onrender.com", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
