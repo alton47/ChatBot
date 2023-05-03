@@ -33,6 +33,8 @@ function typeText(element, text) {
   }, 20);
 }
 
+//console.log({parsedData})
+
 // generate unique ID for each message div of bot
 // necessary for typing text effect for that specific reply
 // without unique ID, typing text will work on every element
@@ -85,7 +87,7 @@ const handleSubmit = async (e) => {
   loader(messageDiv);
 
   //OPenAI Bot response
-  const response = await fetch("http://localhost:3000", {
+  const response = await fetch("http://localhost:3000/", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
